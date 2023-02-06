@@ -50,8 +50,8 @@ class LoginApp extends StatelessWidget {
                 height: 10,
               ),
               Container(
-                width: 325,
-                height: 470,
+                width: 440,
+                height: 500,
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -85,15 +85,15 @@ class LoginApp extends StatelessWidget {
                       height: 60,
                       child: const TextField(
                         decoration: InputDecoration(
-                            suffix: Icon(
-                              FontAwesomeIcons.envelope,
-                              color: Colors.red,
-                            ),
-                            labelText: "Email Address",
-                            border: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(8)),
-                            )),
+                          suffix: Icon(
+                            FontAwesomeIcons.envelope,
+                            color: Colors.red,
+                          ),
+                          labelText: "Email Address",
+                          // border: OutlineInputBorder(
+                          //   borderRadius: BorderRadius.all(Radius.circular(8)),
+                          // ),
+                        ),
                       ),
                     ),
                     const SizedBox(
@@ -105,15 +105,15 @@ class LoginApp extends StatelessWidget {
                       child: const TextField(
                         obscureText: true,
                         decoration: InputDecoration(
-                            suffix: Icon(
-                              FontAwesomeIcons.eyeSlash,
-                              color: Colors.red,
-                            ),
-                            labelText: "Password",
-                            border: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(8)),
-                            )),
+                          suffix: Icon(
+                            FontAwesomeIcons.eyeSlash,
+                            color: Colors.red,
+                          ),
+                          labelText: "Password",
+                          // border: OutlineInputBorder(
+                          //   borderRadius: BorderRadius.all(Radius.circular(8)),
+                          // ),
+                        ),
                       ),
                     ),
                     Padding(
@@ -124,27 +124,32 @@ class LoginApp extends StatelessWidget {
                           TextButton(
                             onPressed: click,
                             child: const Text(
-                              "Forget Password",
+                              "Forget Password?",
                               style: TextStyle(color: Colors.deepOrange),
                             ),
                           )
                         ],
                       ),
                     ),
+                    const SizedBox(
+                      height: 30,
+                    ),
                     GestureDetector(
                       child: Container(
                         alignment: Alignment.center,
                         width: 250,
                         decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(Radius.circular(50)),
-                            gradient: LinearGradient(
-                                begin: Alignment.centerLeft,
-                                end: Alignment.centerRight,
-                                colors: [
-                                  Color(0xFF8A2387),
-                                  Color(0xFFE94057),
-                                  Color(0xFFF27121),
-                                ])),
+                          borderRadius: BorderRadius.all(Radius.circular(50)),
+                          gradient: LinearGradient(
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                            colors: [
+                              Color(0xFF8A2387),
+                              Color(0xFFE94057),
+                              Color(0xFFF27121),
+                            ],
+                          ),
+                        ),
                         child: const Padding(
                           padding: EdgeInsets.all(12.0),
                           child: Text(
@@ -158,10 +163,10 @@ class LoginApp extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      height: 17,
+                      height: 40,
                     ),
                     const Text(
-                      "Or Login using Social Media Account",
+                      "Or Login using Social Media",
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(
@@ -171,27 +176,31 @@ class LoginApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         IconButton(
-                            onPressed: click,
-                            icon: const Icon(FontAwesomeIcons.facebook,
-                                color: Colors.blue)),
+                          onPressed: click,
+                          icon: const Icon(FontAwesomeIcons.facebook,
+                              color: Colors.blue),
+                        ),
                         IconButton(
-                            onPressed: click,
-                            icon: const Icon(
-                              FontAwesomeIcons.google,
-                              color: Colors.redAccent,
-                            )),
+                          onPressed: click,
+                          icon: const Icon(
+                            FontAwesomeIcons.google,
+                            color: Colors.redAccent,
+                          ),
+                        ),
                         IconButton(
-                            onPressed: click,
-                            icon: const Icon(
-                              FontAwesomeIcons.twitter,
-                              color: Colors.orangeAccent,
-                            )),
+                          onPressed: click,
+                          icon: const Icon(
+                            FontAwesomeIcons.twitter,
+                            color: Colors.orangeAccent,
+                          ),
+                        ),
                         IconButton(
-                            onPressed: click,
-                            icon: const Icon(
-                              FontAwesomeIcons.linkedinIn,
-                              color: Colors.green,
-                            ))
+                          onPressed: click,
+                          icon: const Icon(
+                            FontAwesomeIcons.linkedinIn,
+                            color: Colors.green,
+                          ),
+                        ),
                       ],
                     )
                   ],
